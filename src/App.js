@@ -6,22 +6,24 @@ import { useLayoutEffect, useRef } from "react";
 import LabSection from "./components/LabSection";
 import { Coin } from "./components/styledComponents";
 import Features from "./components/Features";
+import { useWindowWidth } from "@react-hook/window-size";
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerEase(SteppedEase);
   gsap.registerEase(Power0);
   const ref = useRef(null);
+  const width = useWindowWidth();
   useLayoutEffect(() => {
     const element = ref.current;
     gsap.to(element.querySelector("#Coin"), {
       scrollTrigger: {
         trigger: element.querySelector("#Lab"),
         start: "200",
-        end: "+=1100",
+        end: width > 900 ? "+=1200" : "+=900",
         scrub: 2,
       },
-      y: 1100,
+      y: width > 900 ? 1200 : 900,
       ease: Power0.easeNone,
     });
   });

@@ -1,22 +1,29 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 import BuyTokens from "./BuyTokens";
 import FeaturesList from "./FeaturesList";
+import FeaturesTitle from "./FeaturesTitle";
+import { FeaturesWrapper } from "./styledComponents";
 
 const Features = () => {
   return (
-    <Stack id="Features" width={"100vw"} alignItems={"center"} spacing={8}>
+    <FeaturesWrapper
+      id="Features"
+      width={"100vw"}
+      alignItems={"center"}
+      spacing={6}
+      direction={{ xs: "column-reverse", md: "column" }}
+    >
       <BuyTokens />
-      <Typography
-        width={"80%"}
-        textAlign="left"
-        fontFamily={"Neue Haas Grotesk Text Pro"}
-        variant="h4"
+      <Stack
+        pt={{ xs: "22rem", md: 0 }}
+        width={"100vw"}
+        spacing={6}
+        alignItems={"center"}
       >
-        <span style={{ color: "#3555f7" }}>Features </span>
-        of Hatom Protocol
-      </Typography>
-      <FeaturesList />
-    </Stack>
+        <FeaturesTitle />
+        <FeaturesList />
+      </Stack>
+    </FeaturesWrapper>
   );
 };
 
