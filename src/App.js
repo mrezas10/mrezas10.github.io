@@ -9,6 +9,7 @@ import Features from "./components/Features";
 import { useWindowWidth } from "@react-hook/window-size";
 import HatomHeader from "./components/HatomHeader";
 import HatomTitle from "./components/HatomTitle";
+import NewsLetter from "./components/NewsLetter";
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -45,11 +46,12 @@ function App() {
   return (
     <div className="App" ref={ref}>
       <HatomHeader />
+      <HatomTitle />
       <LabSection id="Lab">
         <Coin id="Coin"></Coin>
       </LabSection>
       <Features />
-      <HatomTitle />
+      <NewsLetter />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 // ** Material UI Imports
 import { styled } from "@mui/system";
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Input, Stack, Typography } from "@mui/material";
 
 // ** Media Imports
 import bg from "../bg.svg";
@@ -76,6 +76,7 @@ export const HatomButton = styled(Button)({
   textTransform: "none",
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontSize: "1.1rem",
+  color: "#ffffff",
   background: "rgb(27,67,71)", // eslint-disable-next-line
   background:
     "linear-gradient(270deg, rgba(27,67,71,1) 0%, rgba(61,144,106,1) 100%)",
@@ -147,4 +148,29 @@ export const AppButtonContained = styled(Button)({
   borderRadius: "7px",
   background: "rgb(0,77,0)", // eslint-disable-next-line
   background: "linear-gradient(90deg, rgba(0,77,0,1) 0%, rgba(1,48,30,1) 100%)",
+});
+
+export const NewsWrapper = styled(Stack)({
+  background: "rgb(38,91,92)", //eslint-disable-next-line
+  background:
+    "linear-gradient(90deg, rgba(38,91,92,1) 0%, rgba(17,86,107,1) 100%)",
+  width: "100vw",
+  minHeight: "10rem",
+  marginTop: "3rem",
+  padding: "5rem 0",
+});
+
+export const InputWrapper = styled(Stack)({
+  padding: "10px",
+  direction: "row",
+  borderRadius: "10px",
+  alignItems: "center",
+  justifyContent: "space-between",
+  background: "#315B82",
+});
+
+export const NewsInput = styled(Input)({
+  fontSize: "1.3rem",
+  padding: "0 1rem",
+  color: "white",
 });

@@ -16,7 +16,7 @@ const HatomHeader = () => {
       position={"absolute"}
       top={0}
       zIndex={100}
-      width={"70vw"}
+      width={{ xs: "90vw", md: "70vw" }}
       height={{ xs: "5rem", md: "7rem" }}
       direction={"row"}
       justifyContent={"space-between"}
