@@ -1,14 +1,22 @@
+// ** Material UI Imports
 import { Stack } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useWindowWidth } from "@react-hook/window-size";
+
+// ** Styled Components
 import {
   AppButtonBorder,
   AppButtonContained,
   HeaderLogo,
   HeaderText,
 } from "./styledComponents";
-import Logo from "../logo.svg";
 
+// ** React Width Hook
+import { useWindowWidth } from "@react-hook/window-size";
+
+// ** Header Logo
+import Logo from "../media/logo.svg";
+
+// ** Header Section
 const HatomHeader = () => {
   const width = useWindowWidth();
   return (

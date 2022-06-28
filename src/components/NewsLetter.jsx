@@ -1,3 +1,7 @@
+// ** Material UI Imports
+import { Stack } from "@mui/material";
+
+// ** Styled Components
 import {
   HatomButton,
   InputWrapper,
@@ -5,9 +9,11 @@ import {
   NewsWrapper,
   StyledText,
 } from "./styledComponents";
-import { useWindowWidth } from "@react-hook/window-size";
-import { Stack } from "@mui/material";
 
+// ** React width Hook
+import { useWindowWidth } from "@react-hook/window-size";
+
+// ** NewsLetter section
 const NewsLetter = () => {
   const width = useWindowWidth();
   return (

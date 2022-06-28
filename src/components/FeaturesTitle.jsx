@@ -1,5 +1,7 @@
+// ** Styled Components
 import { StyledText } from "./styledComponents";
 
+// ** Features Title Component
 const FeaturesTitle = () => {
   return (
     <StyledText

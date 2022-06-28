@@ -1,6 +1,10 @@
+// ** Material UI Imports
 import { Stack } from "@mui/material";
+
+// ** Styled Components
 import { StyledText } from "./styledComponents";
 
+// Page Title Component
 const HatomTitle = () => {
   return (
     <Stack position="absolute" top={"10rem"} zIndex={10}>

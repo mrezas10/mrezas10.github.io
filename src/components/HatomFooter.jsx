@@ -1,3 +1,7 @@
+// ** Material UI Imports
+import { Stack } from "@mui/material";
+
+// ** Styled Components
 import {
   AppButtonBorder,
   AppButtonContained,
@@ -5,11 +9,17 @@ import {
   FooterLogo,
   FooterWrapper,
 } from "./styledComponents";
-import Logo from "../logo-footer.png";
-import FooterList from "./FooterList";
-import { useWindowWidth } from "@react-hook/window-size";
-import { Stack } from "@mui/material";
 
+// ** User Components
+import FooterList from "./FooterList";
+
+// ** Footer Logo
+import Logo from "../media/logo-footer.png";
+
+// ** React Width Hook
+import { useWindowWidth } from "@react-hook/window-size";
+
+// ** Footer Section
 const HatomFooter = () => {
   const width = useWindowWidth();
   return (

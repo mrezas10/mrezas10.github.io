@@ -1,4 +1,7 @@
+// ** Material UI Imports
 import { Stack } from "@mui/material";
+
+// ** Styled Components
 import { StyledText } from "./styledComponents";
 
 const FooterList = ({ title, children }) => {

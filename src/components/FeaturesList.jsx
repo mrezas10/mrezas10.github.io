@@ -1,7 +1,13 @@
+// ** Material UI Imports
 import { Stack } from "@mui/material";
+
+// ** User Components
 import Feature from "./Feature";
+
+// ** Styled Components
 import { FeatureListWrapper } from "./styledComponents";
 
+// ** Features List Components
 const FeaturesList = () => {
   return (
     <FeatureListWrapper

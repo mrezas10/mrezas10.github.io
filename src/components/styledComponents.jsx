@@ -3,13 +3,13 @@ import { styled } from "@mui/system";
 import { Button, Input, Stack, Typography } from "@mui/material";
 
 // ** Media Imports
-import bg from "../bg.svg";
-import bgMobile from "../bg-mobile.png";
-import overlight from "../over-light.svg";
-import coinsequence from "../coin-sequence.png";
-import linesLarge from "../lines-large.svg";
-import linesMedium from "../lines-medium.svg";
-import linesMobile from "../lines-mobile.svg";
+import bg from "../media/bg.svg";
+import bgMobile from "../media/bg-mobile.png";
+import overlight from "../media/over-light.svg";
+import coinsequence from "../media/coin-sequence.png";
+import linesLarge from "../media/lines-large.svg";
+import linesMedium from "../media/lines-medium.svg";
+import linesMobile from "../media/lines-mobile.svg";
 
 // ** Background for Lab Section
 export const Background = styled("div")({
@@ -71,6 +71,7 @@ export const Coin = styled("div")({
   },
 });
 
+// ** Custom Button for the page
 export const HatomButton = styled(Button)({
   borderRadius: "7px",
   textTransform: "none",
@@ -82,6 +83,8 @@ export const HatomButton = styled(Button)({
     "linear-gradient(270deg, rgba(27,67,71,1) 0%, rgba(61,144,106,1) 100%)",
   height: "3.5rem",
 });
+
+// ** Features Wrapper
 export const FeaturesWrapper = styled(Stack)({
   "@media screen and (max-width: 900px)": {
     backgroundImage: `url(${linesMobile})`,
@@ -90,6 +93,8 @@ export const FeaturesWrapper = styled(Stack)({
     backgroundPosition: "center 18rem",
   },
 });
+
+// ** Features List Wrapper
 export const FeatureListWrapper = styled(Stack)({
   backgroundImage: `url(${linesLarge})`,
   backgroundRepeat: "no-repeat",
@@ -109,11 +114,13 @@ export const FeatureListWrapper = styled(Stack)({
   },
 });
 
+// ** Styled Text Component
 export const StyledText = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontWeight: "bold",
 });
 
+// ** Header Text Component
 export const HeaderText = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontSize: "1rem",
@@ -121,12 +128,13 @@ export const HeaderText = styled(Typography)({
   color: "#ffffff",
 });
 
+// ** Header Logo Styled
 export const HeaderLogo = styled("img")({
-  //
+  maxHeight: "10rem",
 });
 
+// ** App Button Gradient Border
 export const AppButtonBorder = styled("div")({
-  //
   borderRadius: "7px",
   maxWidth: "fit-content",
   maxHeight: "3rem",
@@ -138,6 +146,7 @@ export const AppButtonBorder = styled("div")({
     "linear-gradient(90deg, rgba(53,85,247,1) 0%, rgba(0,77,0,1) 52%, rgba(0,77,0,1) 100%)",
 });
 
+// ** App Button
 export const AppButtonContained = styled(Button)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontWeight: "bold",
@@ -150,6 +159,7 @@ export const AppButtonContained = styled(Button)({
   background: "linear-gradient(90deg, rgba(0,77,0,1) 0%, rgba(1,48,30,1) 100%)",
 });
 
+// ** Newsletter Wrapper
 export const NewsWrapper = styled(Stack)({
   background: "rgb(38,91,92)", //eslint-disable-next-line
   background:
@@ -160,6 +170,7 @@ export const NewsWrapper = styled(Stack)({
   padding: "5rem 0",
 });
 
+// ** NewsLetter Input Wrapper
 export const InputWrapper = styled(Stack)({
   padding: "10px",
   direction: "row",
@@ -169,12 +180,14 @@ export const InputWrapper = styled(Stack)({
   background: "#315B82",
 });
 
+// ** Newsletter input
 export const NewsInput = styled(Input)({
   fontSize: "1.3rem",
   padding: "0 1rem",
   color: "white",
 });
 
+// ** Footer Wrapper
 export const FooterWrapper = styled(Stack)({
   padding: "10rem 0",
   background: "#031222",
@@ -187,6 +200,7 @@ export const FooterWrapper = styled(Stack)({
   },
 });
 
+// ** Footer Logo
 export const FooterLogo = styled("img")({
   width: "4rem",
   height: "4rem",
@@ -195,6 +209,7 @@ export const FooterLogo = styled("img")({
   },
 });
 
+// ** Footer List Item
 export const FooterListItem = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontSize: "1rem",
