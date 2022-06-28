@@ -49,7 +49,7 @@ export const OverLay = styled("div")({
   backgroundSize: "cover",
   position: "absolute",
   top: 0,
-  zIndex: 100,
+  zIndex: 5,
   "@media screen and (max-width:900px)": {
     height: "80rem",
     backgroundImage: "none",
@@ -86,7 +86,7 @@ export const FeaturesWrapper = styled(Stack)({
     backgroundImage: `url(${linesMobile})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "auto auto",
-    backgroundPosition: "15rem 18rem",
+    backgroundPosition: "center 18rem",
   },
 });
 export const FeatureListWrapper = styled(Stack)({
@@ -111,4 +111,40 @@ export const FeatureListWrapper = styled(Stack)({
 export const StyledText = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontWeight: "bold",
+});
+
+export const HeaderText = styled(Typography)({
+  fontFamily: "Neue Haas Grotesk Text Pro",
+  fontSize: "1rem",
+  fontWeight: "bold",
+  color: "#ffffff",
+});
+
+export const HeaderLogo = styled("img")({
+  //
+});
+
+export const AppButtonBorder = styled("div")({
+  //
+  borderRadius: "7px",
+  maxWidth: "fit-content",
+  maxHeight: "fit-content",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "1px",
+  background:
+    "linear-gradient(90deg, rgba(53,85,247,1) 0%, rgba(0,77,0,1) 52%, rgba(0,77,0,1) 100%)",
+});
+
+export const AppButtonContained = styled(Button)({
+  fontFamily: "Neue Haas Grotesk Text Pro",
+  fontWeight: "bold",
+  width: "5rem",
+  height: "3rem",
+  textTransform: "none",
+  color: "white",
+  borderRadius: "7px",
+  background: "rgb(0,77,0)", // eslint-disable-next-line
+  background: "linear-gradient(90deg, rgba(0,77,0,1) 0%, rgba(1,48,30,1) 100%)",
 });
