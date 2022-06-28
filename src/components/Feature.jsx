@@ -1,6 +1,10 @@
+// ** Material UI Imports
 import { Stack, Typography } from "@mui/material";
+
+// ** Styled Components
 import { StyledText } from "./styledComponents";
 
+// ** Feature Component
 const Feature = ({ title, children }) => {
   return (
     <Stack

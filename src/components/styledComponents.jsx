@@ -129,7 +129,7 @@ export const AppButtonBorder = styled("div")({
   //
   borderRadius: "7px",
   maxWidth: "fit-content",
-  maxHeight: "fit-content",
+  maxHeight: "3rem",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -173,4 +173,31 @@ export const NewsInput = styled(Input)({
   fontSize: "1.3rem",
   padding: "0 1rem",
   color: "white",
+});
+
+export const FooterWrapper = styled(Stack)({
+  padding: "10rem 0",
+  background: "#031222",
+  width: "100vw",
+  minHeight: "10rem",
+  justifyContent: "space-around",
+  flexWrap: "wrap",
+  "@media screen and (max-width: 900px)": {
+    justifyContent: "normal",
+  },
+});
+
+export const FooterLogo = styled("img")({
+  width: "4rem",
+  height: "4rem",
+  "@media screen and (max-width: 900px)": {
+    padding: "2rem",
+  },
+});
+
+export const FooterListItem = styled(Typography)({
+  fontFamily: "Neue Haas Grotesk Text Pro",
+  fontSize: "1rem",
+  fontWeight: "normal",
+  color: "#6A7DAA",
 });

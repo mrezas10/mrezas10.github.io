@@ -1,16 +1,26 @@
+// Style import
 import "./App.css";
+
+// ** GSAP Imports
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { SteppedEase, Power0 } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
+
+// ** User Componentss
 import LabSection from "./components/LabSection";
-import { Coin } from "./components/styledComponents";
 import Features from "./components/Features";
-import { useWindowWidth } from "@react-hook/window-size";
 import HatomHeader from "./components/HatomHeader";
 import HatomTitle from "./components/HatomTitle";
 import NewsLetter from "./components/NewsLetter";
+import HatomFooter from "./components/HatomFooter";
+// ** Styled Components
+import { Coin } from "./components/styledComponents";
 
+// ** React Width Hook
+import { useWindowWidth } from "@react-hook/window-size";
+
+// ** Main Page
 function App() {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerEase(SteppedEase);
@@ -52,6 +62,7 @@ function App() {
       </LabSection>
       <Features />
       <NewsLetter />
+      <HatomFooter />
     </div>
   );
 }

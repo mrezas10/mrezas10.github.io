@@ -1,6 +1,10 @@
+// ** Material UI Imports
 import { Stack } from "@mui/material";
+
+// ** Styled Components
 import { HatomButton, StyledText } from "./styledComponents";
 
+// ** Buy Tokens Section
 const BuyTokens = () => {
   return (
     <Stack
