@@ -7,7 +7,12 @@ import Feature from "./Feature";
 // ** Styled Components
 import { FeatureListWrapper } from "./styledComponents";
 
-// ** Features List Components
+/**
+ * @desc List of all instances of Feature Component
+ * @example
+ * <FeaturesList />
+ * @return {ReactElement}
+ */
 const FeaturesList = () => {
   return (
     <FeatureListWrapper

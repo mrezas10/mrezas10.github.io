@@ -1,7 +1,12 @@
 // ** Styled Components
 import { StyledText } from "./styledComponents";
 
-// ** Features Title Component
+/**
+ * @desc Title of the Features Section
+ * @example
+ * <FeaturesTitle />
+ * @return {ReactElement}
+ */
 const FeaturesTitle = () => {
   return (
     <StyledText

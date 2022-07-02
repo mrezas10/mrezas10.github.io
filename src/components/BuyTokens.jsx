@@ -4,7 +4,12 @@ import { Stack } from "@mui/material";
 // ** Styled Components
 import { HatomButton, StyledText } from "./styledComponents";
 
-// ** Buy Tokens Section
+/**
+ * @desc Buy Tokens section (Top of Features Section)
+ * @example
+ * <BuyTokens />
+ * @return {ReactElement}
+ */
 const BuyTokens = () => {
   return (
     <Stack

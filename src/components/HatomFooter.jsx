@@ -19,7 +19,12 @@ import Logo from "../media/logo-footer.png";
 // ** React Width Hook
 import { useWindowWidth } from "@react-hook/window-size";
 
-// ** Footer Section
+/**
+ * @desc Footer Section React Component
+ * @example
+ * <HatomFooter />
+ * @return {ReactElement}
+ */
 const HatomFooter = () => {
   const width = useWindowWidth();
   return (

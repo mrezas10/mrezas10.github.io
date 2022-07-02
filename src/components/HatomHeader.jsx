@@ -16,7 +16,12 @@ import { useWindowWidth } from "@react-hook/window-size";
 // ** Header Logo
 import Logo from "../media/logo.svg";
 
-// ** Header Section
+/**
+ * @desc Header Section React Component
+ * @example
+ * <HatomHeader/>
+ * @return {ReactElement}
+ */
 const HatomHeader = () => {
   const width = useWindowWidth();
   return (

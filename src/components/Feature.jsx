@@ -4,7 +4,15 @@ import { Stack, Typography } from "@mui/material";
 // ** Styled Components
 import { StyledText } from "./styledComponents";
 
-// ** Feature Component
+/**
+ * @desc Feature component for Features Section
+ * @example
+ * <Feature title={""}>...</Feature>
+ * @param {object} props - React Properties
+ * @param {string} props.title - title for the feature
+ * @param {ReactElement} props.children - inner text as react children
+ * @return {ReactElement}
+ */
 const Feature = ({ title, children }) => {
   return (
     <Stack

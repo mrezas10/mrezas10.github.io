@@ -11,7 +11,11 @@ import linesLarge from "../media/lines-large.svg";
 import linesMedium from "../media/lines-medium.svg";
 import linesMobile from "../media/lines-mobile.svg";
 
-// ** Background for Lab Section
+/**
+ * @desc Background for Lab Section
+ * @example
+ * <Background></Background>
+ */
 export const Background = styled("div")({
   backgroundImage: `url(${bg})`,
   backgroundPosition: "center",
@@ -27,7 +31,11 @@ export const Background = styled("div")({
   },
 });
 
-// ** Lab Section Wrapper Styles
+/**
+ * @desc Lab Section Wrapper Styles
+ * @example
+ * <LabSectionStyled>...</LabSectionStyled>
+ */
 export const LabSectionStyled = styled("div")({
   width: "100vw",
   height: "90rem",
@@ -39,7 +47,11 @@ export const LabSectionStyled = styled("div")({
   },
 });
 
-// ** Lab Section Tube Overlay
+/**
+ * @desc Lab Section Tube Overlay
+ * @example
+ * <OverLay></OverLay>
+ */
 export const OverLay = styled("div")({
   width: "100vw",
   height: "90rem",
@@ -56,7 +68,11 @@ export const OverLay = styled("div")({
   },
 });
 
-// ** Coin Styles
+/**
+ * @desc Coin Styles
+ * @example
+ * <Coin></Coin>
+ */
 export const Coin = styled("div")({
   transform: "translate(2.5vw, 50px) scale(0.65)",
   width: "400px",
@@ -71,7 +87,11 @@ export const Coin = styled("div")({
   },
 });
 
-// ** Custom Button for the page
+/**
+ * @desc Custom button for the main page
+ * @example
+ * <HatomButton variant="contained">...</HatomButton>
+ */
 export const HatomButton = styled(Button)({
   borderRadius: "7px",
   textTransform: "none",
@@ -84,7 +104,11 @@ export const HatomButton = styled(Button)({
   height: "3.5rem",
 });
 
-// ** Features Wrapper
+/**
+ * @desc Features Section Wrapper
+ * @example
+ * <FeaturesWrapper direction="column">...</FeaturesWrapper>
+ */
 export const FeaturesWrapper = styled(Stack)({
   "@media screen and (max-width: 900px)": {
     backgroundImage: `url(${linesMobile})`,
@@ -94,7 +118,11 @@ export const FeaturesWrapper = styled(Stack)({
   },
 });
 
-// ** Features List Wrapper
+/**
+ * @desc Features List Wrapper
+ * @example
+ * <FeaturesListWrapper direction="row">...</FeaturesListWrapper>
+ */
 export const FeatureListWrapper = styled(Stack)({
   backgroundImage: `url(${linesLarge})`,
   backgroundRepeat: "no-repeat",
@@ -114,13 +142,21 @@ export const FeatureListWrapper = styled(Stack)({
   },
 });
 
-// ** Styled Text Component
+/**
+ * @desc Styled Text Component
+ * @example
+ * <StyledText color="" variant="" fontSize=""></StyledText>
+ */
 export const StyledText = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontWeight: "bold",
 });
 
-// ** Header Text Component
+/**
+ * @desc Header Text Component
+ * @example
+ * <HeaderText variant="" fontSize=""></HeaderText>
+ */
 export const HeaderText = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontSize: "1rem",
@@ -128,12 +164,20 @@ export const HeaderText = styled(Typography)({
   color: "#ffffff",
 });
 
-// ** Header Logo Styled
+/**
+ * @desc Header Logo Styled
+ * @example
+ * <HeaderLogo src={""}/>
+ */
 export const HeaderLogo = styled("img")({
   maxHeight: "10rem",
 });
 
-// ** App Button Gradient Border
+/**
+ * @desc App Button Gradient Border
+ * @example
+ * <AppButtonBorder>...</AppButtonBorder>
+ */
 export const AppButtonBorder = styled("div")({
   borderRadius: "7px",
   maxWidth: "fit-content",
@@ -146,7 +190,11 @@ export const AppButtonBorder = styled("div")({
     "linear-gradient(90deg, rgba(53,85,247,1) 0%, rgba(0,77,0,1) 52%, rgba(0,77,0,1) 100%)",
 });
 
-// ** App Button
+/**
+ * @desc App Button
+ * @example
+ * <AppButton>...</AppButton>
+ */
 export const AppButtonContained = styled(Button)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontWeight: "bold",
@@ -160,6 +208,11 @@ export const AppButtonContained = styled(Button)({
 });
 
 // ** Newsletter Wrapper
+/**
+ * @desc Newsletter Wrapper
+ * @example
+ * <NewsWrapper direction="column">...</NewsWrapper>
+ */
 export const NewsWrapper = styled(Stack)({
   background: "rgb(38,91,92)", //eslint-disable-next-line
   background:
@@ -170,7 +223,11 @@ export const NewsWrapper = styled(Stack)({
   padding: "5rem 0",
 });
 
-// ** NewsLetter Input Wrapper
+/**
+ * @desc Newsletter Input Wrapper
+ * @example
+ * <InputWrapper direction="row">...</InputWrapper>
+ */
 export const InputWrapper = styled(Stack)({
   padding: "10px",
   direction: "row",
@@ -180,14 +237,22 @@ export const InputWrapper = styled(Stack)({
   background: "#315B82",
 });
 
-// ** Newsletter input
+/**
+ * @desc Styled Input for Newsletter
+ * @example
+ * <NewsWrapper disableUnderline value="" onChange=""/>
+ */
 export const NewsInput = styled(Input)({
   fontSize: "1.3rem",
   padding: "0 1rem",
   color: "white",
 });
 
-// ** Footer Wrapper
+/**
+ * @desc Footer Wrapper
+ * @example
+ * <FooterWrapper direction="row">...</FooterWrapper>
+ */
 export const FooterWrapper = styled(Stack)({
   padding: "10rem 0",
   background: "#031222",
@@ -200,7 +265,11 @@ export const FooterWrapper = styled(Stack)({
   },
 });
 
-// ** Footer Logo
+/**
+ * @desc Footer Logo Styled
+ * @example
+ * <HeaderLogo src={""}/>
+ */
 export const FooterLogo = styled("img")({
   width: "4rem",
   height: "4rem",
@@ -210,6 +279,11 @@ export const FooterLogo = styled("img")({
 });
 
 // ** Footer List Item
+/**
+ * @desc Footer List item
+ * @example
+ * <FooterListItem></FooterListItem>
+ */
 export const FooterListItem = styled(Typography)({
   fontFamily: "Neue Haas Grotesk Text Pro",
   fontSize: "1rem",

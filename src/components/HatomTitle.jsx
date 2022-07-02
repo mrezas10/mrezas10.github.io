@@ -4,7 +4,12 @@ import { Stack } from "@mui/material";
 // ** Styled Components
 import { StyledText } from "./styledComponents";
 
-// Page Title Component
+/**
+ * @desc page Title React Component
+ * @example
+ * <HatomTitle />
+ * @return {ReactElement}
+ */
 const HatomTitle = () => {
   return (
     <Stack position="absolute" top={"10rem"} zIndex={10}>

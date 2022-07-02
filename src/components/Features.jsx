@@ -9,7 +9,12 @@ import FeaturesTitle from "./FeaturesTitle";
 // ** Styled Components
 import { FeaturesWrapper } from "./styledComponents";
 
-// ** Features Section
+/**
+ * @desc Features Section React Component
+ * @example
+ * <Features />
+ * @return {ReactElement}
+ */
 const Features = () => {
   return (
     <FeaturesWrapper

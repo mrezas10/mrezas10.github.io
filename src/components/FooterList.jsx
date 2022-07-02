@@ -4,6 +4,15 @@ import { Stack } from "@mui/material";
 // ** Styled Components
 import { StyledText } from "./styledComponents";
 
+/**
+ * @desc List for the Footer Section
+ * @example
+ * <FooterList title={""}>...</FooterList>
+ * @param {object} props - React Properties
+ * @param {string} props.title - title for the footer List
+ * @param {ReactElement} props.children - inner list Components as react children
+ * @return {ReactElement}
+ */
 const FooterList = ({ title, children }) => {
   return (
     <Stack

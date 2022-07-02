@@ -13,7 +13,12 @@ import {
 // ** React width Hook
 import { useWindowWidth } from "@react-hook/window-size";
 
-// ** NewsLetter section
+/**
+ * @desc Newsletter Section React Component
+ * @example
+ * <NewsLetter />
+ * @return {ReactElement}
+ */
 const NewsLetter = () => {
   const width = useWindowWidth();
   return (
