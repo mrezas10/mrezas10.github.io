@@ -32,7 +32,7 @@ const DetectFromImage = () => {
   return (
     <Stack>
       <Stack alignItems={"center"} justifyContent={"centers"}>
-        <Stack component={"img"} src={image} id="target" height={"50vh"} onClick={() => fileRef.current.click()} />
+        <Stack component={"img"} src={image} id="target" maxHeight={"50vh"} maxWidth={"80%"} onClick={() => fileRef.current.click()} />
         <Stack display={"none"}>
           <input
             ref={fileRef}
